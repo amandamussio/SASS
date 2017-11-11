@@ -1,0 +1,52 @@
+// variaveis
+$medidaPicture: 200;
+$espacamentoInterno: 10px;
+$espacamentoExterno: 5px;
+$temaPicture: food;
+
+.picture {
+    margin: 0 auto;
+    width: #{$medidaPicture}px;
+    height: #{$medidaPicture}px;
+    padding: $espacamentoInterno;
+}
+
+.picture-1 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/1');
+}
+
+.picture-2 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/2');
+}
+
+.picture-3 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/3');
+}
+
+.picture-4 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/4');
+}
+
+.picture-5 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/5');
+}
+
+.picture-6 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/6');
+}
+
+.picture-7 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/7');
+}
+
+.picture-8 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/8');
+}
+
+.picture-9 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/9');
+}
+
+.picture-10 {
+    background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/10');
+}
