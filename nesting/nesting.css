@@ -1,0 +1,32 @@
+.menu {
+  background-color: gold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+}
+
+.menu-item {
+  padding: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: green;
+}
+
+.menu .menu-item-link {
+  color: black;
+}
+
+.menu .menu-item-link:hover {
+  color: white;
+}
+ 
+
+ /*# sourceMappingURL= nesting.css.map */

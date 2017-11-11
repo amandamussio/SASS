@@ -1,0 +1,29 @@
+.menu {
+    background-color: gold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    ul {
+        display: flex;
+        flex-grow: 1;
+        list-style: none;
+    }
+
+    &-item {
+        padding: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+
+        &:hover {
+            background-color: green;
+        }
+    }
+
+    .menu-item-link {
+        color: black;
+        &:hover {
+            color: white;
+        }
+    }
+
+}
