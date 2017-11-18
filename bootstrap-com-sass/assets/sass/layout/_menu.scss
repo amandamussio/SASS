@@ -1,0 +1,29 @@
+.menu-main {
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-dark;
+    @extend .fixed-top;
+    &__brand {
+        @extend .navbar-brand;
+        @extend .text-warning;
+        font-size: 1.75rem;
+        font-family: 'Kaushan Script',cursive;
+    }
+    &__toggle {
+        @extend .navbar-toggler;
+        &--icon {
+            @extend .navbar-toggler-icon;
+        }
+    }
+    &__menu {
+        @extend .navbar-nav; 
+        @extend .text-uppercase;
+        @extend .ml-auto;
+    }
+    .nav-link {
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: Montserrat, sans-serif;
+        @extend .text-white;
+    }
+}

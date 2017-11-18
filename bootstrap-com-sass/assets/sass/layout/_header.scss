@@ -1,0 +1,38 @@
+.master-header {
+    @extend .text-center;
+    @extend .text-white;
+    background: url(../images/bg-fundo.jpg) no-repeat center scroll;
+    background-size: cover;
+    height: 100vh;
+    .intro-text {
+        padding-top: 40vh;
+        &__title {
+            font-family: 'Droid Serif', sans-serif;
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+        &__text {
+            @extend .text-uppercase;
+            @include media-breakpoint-up(md) {
+                font-size: 4rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+        &__btn {
+            @extend .btn; 
+            @extend .btn-warning; 
+            @extend .btn-lg;
+            @extend .text-uppercase;
+            font-weight: 700;
+            @extend .text-white;
+            font-family: Montserrat, sans-serif;
+        }
+    }
+
+}

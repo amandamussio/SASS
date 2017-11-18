@@ -1,0 +1,16 @@
+.portfolio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @extend .bg-light;
+    &__title {
+        @extend .mt-0;
+        @extend .mb-1;
+        font-size: 2.4rem;
+        font-family: Montserrat, sans-serif;
+    }
+    &__subtitle {
+        font-style: italic;
+        @extend .text-muted;
+        font-size: 1rem;
+    }
+}
