@@ -1,0 +1,72 @@
+.profile-link--facebook:hover, .profile-link--facebook:focus {
+  background-color: #3b5998;
+}
+
+.profile-link--flickr:hover, .profile-link--flickr:focus {
+  background-color: #0063db;
+}
+
+.profile-link--github:hover, .profile-link--github:focus {
+  background-color: #4183c4;
+}
+
+.profile-link--googleplus:hover, .profile-link--googleplus:focus {
+  background-color: #dd4b39;
+}
+
+.profile-link--instagram:hover, .profile-link--instagram:focus {
+  background-color: #517fa4;
+}
+
+.profile-link--linkedin:hover, .profile-link--linkedin:focus {
+  background-color: #007bb6;
+}
+
+.profile-link--pinterest:hover, .profile-link--pinterest:focus {
+  background-color: #cb2027;
+}
+
+.profile-link--twitter:hover, .profile-link--twitter:focus {
+  background-color: #0088da;
+}
+
+.profile-link--vimeo:hover, .profile-link--vimeo:focus {
+  background-color: #aad450;
+}
+
+.profile-link--youtube:hover, .profile-link--youtube:focus {
+  background-color: #b00;
+}
+
+body {
+  margin: 0;
+  padding: 3rem;
+}
+
+ol {
+  font-family: Helvetica, sans-serif;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 20rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+ol .profile-link {
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  color: #4778b8;
+  display: block;
+  padding: .75rem 1rem;
+  text-decoration: none;
+}
+
+ol .profile-link:focus, ol .profile-link:hover {
+  color: white;
+}
+ 
+
+ /*# sourceMappingURL= map.css.map */

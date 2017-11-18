@@ -1,0 +1,37 @@
+.formulario {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.formulario ::-webkit-input-placeholder {
+  font-style: italic;
+  color: red;
+  font-weight: 600;
+}
+
+.formulario :-moz-placeholder {
+  font-style: italic;
+  color: red;
+  font-weight: 600;
+}
+
+.formulario ::-moz-placeholder {
+  font-style: italic;
+  color: red;
+  font-weight: 600;
+}
+
+.formulario :ms-input-placeholder {
+  font-style: italic;
+  color: red;
+  font-weight: 600;
+}
+
+.formulario__input {
+  width: 100%;
+  height: 57px;
+  padding-left: 10px;
+}
+ 
+
+ /*# sourceMappingURL= content.css.map */

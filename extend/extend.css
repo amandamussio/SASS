@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*
+    Extend ele cria uma classe para 
+    ser reaproveitada, ou seja essa classe compilará junto no seu css
+*/
+.text, .container h1, .container .conteudo-do-artigo {
+  text-align: center;
+  color: purple;
+}
+
+/*
+    Placeholder são regras guardadas com se fossem variaveis para se aproveitar, 
+    não são compiladas na finalização do css
+*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container h1, .container .link {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+}
+
+.container .link {
+  color: purple;
+}
+ 
+
+ /*# sourceMappingURL= extend.css.map */

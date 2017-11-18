@@ -1,0 +1,56 @@
+//Map
+//Lista de perfis
+$profiles: (
+    facebook: #3b5998,
+    flickr: #0063db,
+    github: #4183c4,
+    googleplus: #dd4b39,
+    instagram: #517fa4,
+    linkedin: #007bb6,
+    pinterest: #cb2027,
+    twitter: #0088da,
+    vimeo: #aad450,
+    youtube: #b00
+);
+
+//Map
+//cada rede social e cor na lista de perfis
+@each $profile, $cor in $profiles {
+    .profile-link--#{$profile} {
+        &:hover,
+        &:focus {
+            background-color: $cor;
+        }
+    }
+}
+
+//Regras
+body {
+    margin: 0;
+    padding: 3rem;
+}
+ol {
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 20rem;
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    .profile-link {
+        background-color: #f2f2f2;
+        border-radius: 3px;
+        color: #4778b8;
+        display: block;
+        padding: .75rem 1rem;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            color: white;
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+.cabecalho {
+    background-color: $corPrincipal;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: $marginPadrao;
+    &__title {
+        @extend %textCenter;
+        font-size: $fontGrande;
+    }
+}

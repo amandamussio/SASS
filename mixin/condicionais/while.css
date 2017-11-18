@@ -1,0 +1,45 @@
+.pictures .picture {
+  background-color: black;
+  background-repeat: no-repeat;
+  width: 445px;
+  height: 445px;
+}
+
+.pictures .picture-1 {
+  background: url("http://lorempixel.com/445/445/food/1");
+}
+
+.pictures .picture-2 {
+  background: url("http://lorempixel.com/445/445/food/2");
+}
+
+.pictures .picture-3 {
+  background: url("http://lorempixel.com/445/445/food/3");
+}
+
+.pictures .picture-4 {
+  background: url("http://lorempixel.com/445/445/food/4");
+}
+
+.pictures .picture-5 {
+  background: url("http://lorempixel.com/445/445/food/5");
+}
+
+.pictures .picture-6 {
+  background: url("http://lorempixel.com/445/445/food/6");
+}
+
+.pictures .picture-7 {
+  background: url("http://lorempixel.com/445/445/food/7");
+}
+
+.pictures .picture-8 {
+  background: url("http://lorempixel.com/445/445/food/8");
+}
+
+.pictures .picture-9 {
+  background: url("http://lorempixel.com/445/445/food/9");
+}
+ 
+
+ /*# sourceMappingURL= while.css.map */

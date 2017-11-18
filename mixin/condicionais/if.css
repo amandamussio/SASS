@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+}
+
+.triangulo {
+  width: 300px;
+  height: 100px;
+  padding: 1rem;
+}
+
+.triangulo.triangulo1 {
+  background-color: yellow;
+  color: blue;
+  position: relative;
+}
+
+.triangulo.triangulo1:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid yellow;
+  top: -20px;
+  left: 0;
+}
+
+.triangulo.triangulo2 {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.triangulo.triangulo2:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+  bottom: -20px;
+  right: 0;
+}
+
+.triangulo.triangulo3 {
+  background-color: blue;
+  color: greenyellow;
+  position: relative;
+}
+
+.triangulo.triangulo3:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid blue;
+  bottom: 0;
+  right: -20px;
+}
+
+.triangulo.triangulo4 {
+  background-color: red;
+  color: greenyellow;
+  position: relative;
+}
+
+.triangulo.triangulo4:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid red;
+  top: 0;
+  left: -20px;
+}
+ 
+
+ /*# sourceMappingURL= if.css.map */

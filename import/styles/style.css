@@ -1,0 +1,54 @@
+.cabecalho__title, .rodape .copy {
+  text-align: center;
+}
+
+.conteudo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  background-color: #241f83;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cabecalho__title {
+  font-size: 2rem;
+}
+
+.rodape {
+  background-color: #534adc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.rodape .copy {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.conteudo {
+  height: 80vh;
+  width: 80%;
+}
+
+.conteudo p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */

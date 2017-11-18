@@ -1,0 +1,20 @@
+//Mixin
+@mixin geradorDeGrid($contador,$numerototaldegrids) {
+
+    @for $contador from $contador through $numerototaldegrids{
+
+        $width: percentage(1/$contador); 
+        .col-#{$contador} {
+            width: $width;
+        }
+    }   
+}
+
+//Regras
+[class*="col"] {
+    height: 50px;
+    background-color: gold;
+    margin-bottom: 1rem;
+}
+
+@include geradorDeGrid(1,12);

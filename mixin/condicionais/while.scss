@@ -1,0 +1,34 @@
+//Variables
+$medidaPicture: 445;
+$padding: 10px;
+$margin: 5px;
+$temaPicture: food;
+$color: black;
+
+//Mixin while
+@mixin chamaFotos($contador,$numerototaldefotos) {
+
+    @while $contador < $numerototaldefotos {
+
+        .picture-#{$contador} {
+            background: url('http://lorempixel.com/#{$medidaPicture}/#{$medidaPicture}/#{$temaPicture}/#{$contador}');
+        }
+
+        $contador: $contador + 1;
+
+    }
+}
+
+
+
+
+//Regras
+.pictures {
+    .picture {
+        background-color: $color;
+        background-repeat: no-repeat;
+        width: #{$medidaPicture}px;
+        height: #{$medidaPicture}px;
+    }
+    @include chamaFotos(1,10);
+}

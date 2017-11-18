@@ -1,0 +1,9 @@
+.conteudo {
+    height: 80vh;
+    width: 80%;
+    @extend %centerBlock;
+    p {
+        font-size: $fontMedia;
+        margin-bottom: $marginPadrao
+    }
+}

@@ -1,0 +1,59 @@
+//Mixin
+@mixin tamanho($tamanhoDeLargura, $tamanhoDeAltura: $tamanhoDeLargura){
+    width: $tamanhoDeLargura;
+    height: $tamanhoDeAltura;
+}
+@mixin circulo($cor,$tamanho,$radius) {
+    background-color: $cor;
+    @include tamanho($tamanho);
+    border-radius: $radius;
+}
+@mixin after($cor,$tamanho,$content:'',$display: block,$position: absolute){
+    content: $content;
+    display: $display;
+    position: $position;
+    background-color: $cor;
+    @include tamanho($tamanho);
+    @content
+}
+
+
+//Geral
+.box {
+    margin-bottom: 1rem;
+
+    &.box1 {
+        // background-color: gold;
+        // @include tamanho(100px);
+        // border-radius: 100%;
+        @include circulo(gold,100px,100%);
+        &:after {
+           @include after(red,20px,'',inline-block) {
+               top: 0;
+               right: 20px;
+           };
+        }
+    }
+    
+    &.box2 {
+        // background-color: purple;
+        // @include tamanho(200px);
+        // border-radius: 5px;
+        @include circulo(purple,200px,5px);
+        position: relative;
+       
+        &:after {
+            @include after(white,5) {
+                bottom: 0;
+                right: 20px;
+            };
+        }
+    }
+    
+    &.box3 {
+        // background-color: blue;
+        // @include tamanho(300px);
+        // border-radius: 20%;
+        @include circulo(blue,300px,20%);
+    }
+}

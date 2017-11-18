@@ -1,0 +1,102 @@
+//Mixin if
+@mixin cores($bg) {
+    @if $bg == black {
+        background-color: $bg;
+        color: white;
+    } @else if $bg == yellow {
+        background-color: $bg;
+        color: blue;
+    } @else {
+        background-color: $bg;
+        color: greenyellow;
+    }
+}
+
+@mixin triangulo($direcao,$cor,$tamanho: 20px) {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    //condicoes
+    @if $direcao == top {
+        border-left: $tamanho solid transparent;
+        border-right: $tamanho solid transparent;
+        border-bottom: $tamanho solid $cor;
+    } @else if $direcao == bottom {
+        border-left: $tamanho solid transparent;
+        border-right: $tamanho solid transparent;
+        border-top: $tamanho solid $cor;
+    } @else if $direcao == right {
+        border-top: $tamanho solid transparent;
+        border-bottom: $tamanho solid transparent;
+        border-left: $tamanho solid $cor;
+    } @else if $direcao == left {
+        border-top: $tamanho solid transparent;
+        border-bottom: $tamanho solid transparent;
+        border-right: $tamanho solid $cor;
+    } @else {
+        border: 10px solid $cor;
+    } 
+
+    @content
+}
+
+
+
+
+//Geral
+body {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+.triangulo {
+    width: 300px;
+    height: 100px;
+    padding: 1rem;
+
+    &.triangulo1 {
+        @include cores(yellow);
+        position: relative;
+        &:after {
+           @include triangulo(top,yellow) {
+               top: -20px;
+               left: 0;
+           }
+        }
+    }
+    &.triangulo2 {
+        @include cores(black);
+        position: relative;
+        &:after {
+            @include triangulo(bottom,black) {
+                bottom: -20px;
+                right: 0;
+            }
+         }
+    }
+    &.triangulo3 {
+        @include cores(blue);
+        position: relative;
+        &:after {
+            @include triangulo(right,blue) {
+                bottom: 0;
+                right: -20px;
+            }
+         }
+    }
+    &.triangulo4 {
+        @include cores(red);
+        position: relative;
+        &:after {
+            @include triangulo(left,red) {
+                top: 0;
+                left: -20px;
+            }
+         }
+    }
+
+}
